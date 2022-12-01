@@ -1,8 +1,18 @@
 #Platform Dropshipping
-### tech stack
-*  web server jboss
-*  language kotlin
-*  spring boot
-*  architeture rest
-*  database postgres
-*  modulith modular
+* project temporary public **30/11/2022**
+* date for moved private repository ****
+
+| Project       |      arch     |
+| ------------- | ------------- |
+| infra-local   | infra         |
+| core          | domain        |
+| platform-api  | rest          |
+| websites      | ui            |
+
+
+#### checklist
+
+- [ ] implementation logging
+
+ 
+
