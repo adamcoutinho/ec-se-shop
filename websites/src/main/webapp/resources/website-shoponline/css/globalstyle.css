@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+.header{
+    border: 1px solid black;
+    background: whitesmoke;
+}

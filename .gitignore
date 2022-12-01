@@ -1,0 +1,8 @@
+core/build
+platform-api/platform-application/build
+platform-api/adapter/platform-entrypoint-rest/build
+platform-api/adapter/platform-persistence-postgres/build
+websites/build
+websites/.gradle
+.gradle
+.idea
