@@ -3,7 +3,6 @@ package com.main.entrypoint.rest.by.v1.exception
 import com.main.core.platform.controller.exception.NotFoundException
 import com.main.core.platform.controller.exception.UnprocessedException
 import com.main.entrypoint.rest.by.v1.exception.dto.ExceptionDetailResponse
-import io.klogging.classNameOf
 import java.lang.RuntimeException
 import org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY
 import org.springframework.http.ResponseEntity
