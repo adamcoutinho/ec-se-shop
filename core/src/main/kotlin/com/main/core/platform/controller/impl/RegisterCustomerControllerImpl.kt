@@ -19,8 +19,6 @@ class RegisterCustomerControllerImpl(
             throw NotFoundException(this.javaClass,"user not found")
         }
 
-
-
         val customerRegistered = this.registerCustomerPort.save(customer)
 
         account?.customer = customerRegistered

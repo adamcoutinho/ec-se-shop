@@ -17,6 +17,13 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation:2.7.5")
 
     implementation(project(":core"))
-    implementation("io.klogging:klogging-jvm:0.4.9")
 
+}
+val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
+compileKotlin.kotlinOptions {
+    jvmTarget = "11"
+}
+val compileTestKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
+compileTestKotlin.kotlinOptions {
+    jvmTarget = "11"
 }
