@@ -9,7 +9,7 @@ import javax.persistence.Id
 import javax.persistence.Table
 
 @Entity
-@Table(name="user")
+@Table(name="user_system")
 data class UserEntity(
     @field:Id
     @field:GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -15,4 +15,5 @@ class UserJpaRepositoryAdapter(private val userJpaRepository: UserJpaRepository)
     override fun find(userName: String, password: String): User {
         return this.userJpaRepository.findByUserNameAndPassword(userName,password).toUser()
     }
+
 }
