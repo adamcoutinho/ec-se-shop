@@ -1,4 +1,3 @@
-
 # Spring Boot configuration
 spring:
   # Database
@@ -10,7 +9,7 @@ spring:
   # JPA properties
   jpa:
     hibernate:
-      ddl-auto: validate # update create create-drop validate
+      ddl-auto: create-drop # update create create-drop validate
     show-sql: true
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
