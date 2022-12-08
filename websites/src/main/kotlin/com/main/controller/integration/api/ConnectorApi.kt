@@ -40,6 +40,4 @@ class ConnectorApi(
             .newBuilder()
             .build()
             .newCall(request!!).execute()
-
-
 }

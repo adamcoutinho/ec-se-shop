@@ -1,6 +1,7 @@
 core/build
 platform-api/platform-application/build
-platform-api/adapter/platform-entrypoint-rest/build
+platform-api/platform-adapter/platform-adapter-rest/build
+platform-api/platform-adapter/platform-adapter-postgres/build
 platform-api/adapter/platform-persistence-postgres/build
 websites/build
 websites/.gradle

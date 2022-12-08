@@ -4,10 +4,10 @@ import com.main.controller.integration.api.ConnectorApi
 
 abstract class AuthenticationEndpointAbstract {
 
-    fun post(url:String,jsonContent:String){
+    fun post(url:String,jsonContent:String) =
         ConnectorApi()
             .body(jsonContent)
             .post(url)
             .response()
-    }
+
 }

@@ -7,13 +7,10 @@ import org.hibernate.validator.constraints.NotBlank
 
 data class UserFormRequest(
     @field:NotBlank
-    @SerializedName("user_name")
+    @SerializedName("user")
     var userName: String? = null,
+
     @field:NotBlank
-    @field:Email
-    var email: String? = "teste@live.com",
-    @field:NotBlank
+    @SerializedName("password")
     var password: String? = null
-) {
-    fun toJson() = Gson().toJson(this)
-}
+)

@@ -29,10 +29,10 @@ class LoginController(@Autowired private val  authenticationEndpoint: Authentica
     fun post(@ModelAttribute("formRequest") @Validated request: UserFormRequest, bind: BindingResult): ModelAndView {
         println(request.toString())
         var mv = ModelAndView(PAGE_LOGIN_REQUEST)
-        if (bind.hasErrors()) {
+        if (this.authenticationEndpoint.access(request)) {
             mv = ModelAndView(PAGE_LOGIN_RESPONSE)
         }
-        this.authenticationEndpoint.access(request)
+
         return mv
     }
 
