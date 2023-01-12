@@ -1,0 +1,57 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "jhipster",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.15.0"
+      }
+    ],
+    "buildTool": "gradle",
+    "cacheProvider": "redis",
+    "clientFramework": "vue",
+    "clientPackageManager": "npm",
+    "clientTheme": "united",
+    "clientThemeVariant": "light",
+    "creationTimestamp": 1673488978162,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "devServerPort": 9060,
+    "dtoSuffix": "DTO",
+    "enableGradleEnterprise": false,
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": false,
+    "entitySuffix": "",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "7.8.1",
+    "jwtSecretKey": "MjdkODNhNWU5ZTE5ZmI4OWMyNDRjY2VjZDg1ZTM0OWVjZDI4OWRkMDhkZDhlMjVmZTAyYzhiYjM1NWU3MmQ4YjQyMmMxNTJhYWUwODYwZDI4MWM0Nzg4MDNjNDY3MWM4Y2I5OGY4M2M2NTE5ZWVmNmM3YWQxMmU2ZjdjODEwNWE=",
+    "languages": ["en", "fr"],
+    "messageBroker": false,
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.15.0"
+      }
+    ],
+    "packageName": "com.main.web.site",
+    "pages": [],
+    "prodDatabaseType": "no",
+    "reactive": false,
+    "searchEngine": false,
+    "serverPort": "8080",
+    "serverSideOptions": [],
+    "serviceDiscoveryType": "no",
+    "skipCheckLengthOfIdentifier": false,
+    "skipCommitHook": true,
+    "skipFakeData": false,
+    "skipUserManagement": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "withAdminUi": true
+  }
+}
