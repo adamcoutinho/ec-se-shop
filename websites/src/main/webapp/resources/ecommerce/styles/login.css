@@ -1,0 +1,21 @@
+.card {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dadada;
+    justify-content: center;
+    flex-direction: row;
+    background: white;
+    margin-top: 2rem;
+    margin-left: 35rem;
+}
+
+
+form {
+    margin:0;
+    padding:0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}

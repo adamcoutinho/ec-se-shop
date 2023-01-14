@@ -37,8 +37,8 @@ docker volume rm $(docker volume ls -q)
 echo '####################################################'
 echo 'delete volume'
 echo '####################################################'
-docker volume prune
+docker volume prune -f
 echo '####################################################'
 echo 'delete network'
 echo '####################################################'
-docker network prune
+docker network prune -f

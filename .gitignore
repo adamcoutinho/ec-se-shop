@@ -3,7 +3,9 @@ platform-api/platform-application/build
 platform-api/platform-adapter/platform-adapter-rest/build
 platform-api/platform-adapter/platform-adapter-postgres/build
 platform-api/adapter/platform-persistence-postgres/build
-websites/build
-websites/.gradle
+platform-websites/build
+platform-websites/.gradle
 .gradle
 .idea
+websites/website-ecommerce/node_modules
+websites/website-ecommerce/.vscode

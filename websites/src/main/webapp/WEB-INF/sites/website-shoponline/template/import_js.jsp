@@ -1,1 +1,0 @@
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/website-shoponline/js/script.js" ></script>
