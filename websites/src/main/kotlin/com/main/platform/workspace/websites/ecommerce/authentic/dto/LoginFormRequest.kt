@@ -1,3 +1,10 @@
 package com.main.platform.workspace.websites.ecommerce.authentic.dto
 
-data class LoginFormRequest(val userName: String, val userPassword: String)
+import com.google.gson.annotations.SerializedName
+
+
+data class LoginFormRequest(
+    @SerializedName("user_name")
+    val userName: String,
+    @SerializedName("user_password")
+    val userPassword: String)

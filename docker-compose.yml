@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  #************ api monolith ************
+#  api-monolith:
+#    image: monolith
+#    container_name: platformapi/ecomerce
+#    build:
+#      context: platform-api/Dockerfile
+  #************ api monolith ************
+
+  #************ websites start by apache tomcat ************
+  websites:
+    container_name: ecommerce
+    build:
+      context: websites/.
+    ports:
+      - 3000:3000
+    networks:
+      - bridge
+
+  #************ websites start by apache tomcat ************
+
+  #************ network ************
+networks:
+  bridge:

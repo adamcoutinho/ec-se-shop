@@ -1,10 +1,6 @@
+<%@ taglib tagdir="/WEB-INF/tags/ecommerce/v1/layout" prefix="tag" %>
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-<h1>NotAFound</h1>
-</body>
-</html>
+<tag:page_layout>
+
+    <h1>NOT - FAUND</h1>
+</tag:page_layout>

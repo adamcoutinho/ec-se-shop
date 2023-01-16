@@ -1,0 +1,40 @@
+version: "3.3"
+
+services:
+
+  traefik:
+    image: "traefik:v2.9"
+    container_name: "traefik"
+    command:
+      #- "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+      - "9090:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    labels:
+      # Dashboard
+      - "traefik.http.routers.traefik.rule=Host(`dashboard.dev.lab`)"
+      - "traefik.http.routers.traefik.service=api@internal"
+      - "traefik.http.routers.traefik.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.traefik.entrypoints=websecure"
+      - "traefik.http.routers.http-catchall.rule=hostregexp(`{host:.+}`)"
+      - "traefik.http.routers.http-catchall.entrypoints=web"
+      - "traefik.http.routers.http-catchall.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+
+  websites-ecommerce:
+    image: "traefik/whoami"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=internet"
+      # service websites
+      - "traefik.http.routers.websites.rule=Host(`web.dev.lab`)"
+      - "traefik.http.routers.websites.entrypoints=web"
+      # platform-api
+      - "traefik.http.routers.platform-api.rule=Host(`api.dev.lab`)"
+      - "traefik.http.routers.platform-api.entrypoints=web"

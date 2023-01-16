@@ -1,3 +1,3 @@
 function redirect(urlServlet) {
-    window.location=urlServlet;
+    window.location.href=urlServlet;
 }

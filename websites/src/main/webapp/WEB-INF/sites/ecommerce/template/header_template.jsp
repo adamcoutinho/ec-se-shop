@@ -5,5 +5,3 @@
     <%@include file="../import/import_css.jsp" %>
 </head>
 <body>
-
-

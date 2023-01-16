@@ -19,3 +19,17 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+.bt-login {
+    outline:none;
+    background: white;
+    border: 1px solid #d48fee;
+    height: 25px;
+    width: 200px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
