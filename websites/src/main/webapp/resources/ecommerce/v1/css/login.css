@@ -1,0 +1,89 @@
+.input-text {
+    background: white;
+    border: 1px solid black;
+    outline: none;
+    height: 25px;
+    /*width: 300px;*/
+    padding-left: 13px;
+    margin: 2px;
+}
+.input-text:hover {
+    background: white;
+    border: 1px solid #48b3d3;
+    outline: none;
+    height: 25px;
+    /*width: 300px;*/
+    padding-left: 13px;
+    margin: 2px;
+}
+.input-text:focus {
+    background: white;
+    border: 1px solid #48b3d3;
+    outline: none;
+    height: 25px;
+    /*width: 300px;*/
+    padding-left: 13px;
+    margin: 2px;
+}
+.input-password {
+    background: white;
+    border: 1px solid black;
+    outline: none;
+    height: 25px;
+    /*width: 300px;*/
+    padding-left: 13px;
+    margin: 2px;
+}
+.input-password:hover {
+    background: white;
+    border: 1px solid #48b3d3;
+    outline: none;
+    height: 25px;
+    /*width: 300px;*/
+    padding-left: 13px;
+    margin: 2px;
+}
+.input-password:focus {
+    background: white;
+    border: 1px solid #48b3d3;
+    outline: none;
+    height: 25px;
+    /*width: 300px;*/
+    padding-left: 13px;
+    margin: 2px;
+}
+
+.button-login {
+    background: white;
+    border: 1px solid black;
+    outline: none;
+    height: 25px;
+    /*width: 300px;*/
+    padding-left: 13px;
+    margin: 2px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-login:hover {
+    background: white;
+    border: 1px solid #48b3d3;
+    outline: none;
+    height: 25px;
+    /*width: 300px;*/
+    padding-left: 13px;
+    margin: 2px;
+    color: black;
+}
+.button-login:focus {
+    background: white;
+    border: 1px solid #48b3d3;
+    outline: none;
+    height: 25px;
+    /*width: 300px;*/
+    padding-left: 13px;
+    margin: 2px;
+    color: black;
+}

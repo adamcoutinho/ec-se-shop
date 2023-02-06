@@ -1,4 +1,4 @@
-FROM tomcat:jdk11-corretto
+FROM tomcat:9-jdk11-openjdk
 RUN rm -rf /usr/local/tomcat/webapps/*
 RUN rm -rf /usr/local/tomcat/conf/server.xml
 RUN rm -rf /usr/local/tomcat/conf/tomcat-users.xml

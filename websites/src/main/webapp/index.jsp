@@ -1,12 +1,21 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
 
+    String env = System.getProperty("_ENV_LOCAL") ;
+    switch (env) {
+        case "dev" : {
+            out.println("<h1>page dev</h1>");
+            break;
+        }
+        case "hom" : {
+            out.println("<h1>page hom</h1>");
+            break;
+        }
+        default: {
 
-<h1>Not Found</h1>
+            response.sendRedirect("/auth");
+            break;
+        }
+    }
 
-</body>
-</html>
+%>

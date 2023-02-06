@@ -1,0 +1,11 @@
+<urlrewrite>
+<!--    <rule>-->
+<!--        <from>/test</from>-->
+<!--        <to type="redirect">/page</to>-->
+<!--    </rule>-->
+<!--    <rule>-->
+<!--        <from>/</from>-->
+<!--        <to type="redirect">/auth</to>-->
+<!--    </rule>-->
+
+</urlrewrite>

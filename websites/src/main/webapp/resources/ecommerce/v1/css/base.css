@@ -1,0 +1,16 @@
+* {
+    background: #f6f6f6;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Droid Serif";
+}
+form {
+    margin: 0px;
+    padding: 0px;
+    background: white;
+}
+
+a {
+    text-decoration: none;
+
+}
